@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My Awesome Company Contact Page</title>
-  </head>
-  <body>
-
-    <h1>Company Inc.</h1>
+<h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
     <!-- First, create a form tag where our inputs will be nested -->
+    <form method="GET">
+      <label for="fullname">
+      <input id="fullname" name="fullname" type="text" placeholder="Enter Name" required>
 
+      <label for="email">
+      <input id="email" name="email" type="email" placeholder="Enter Email" required>
 
       <!-- Add a label for 'fullname'-->
+      <label for="phone">
+      <input id="phone" name="phone" type="tel" placeholder="Enter Telephone (optional)">
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
+      <label for="message">
+      <textarea id="message" name="message" placeholder="Enter Message">
 
+      <input id="checkbox" type="checkbox">Done?
 
       <!-- Add a label for 'email'-->
 
@@ -43,6 +44,8 @@
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+
+      <input type="submit">Submit</input>
+    </form>
   </body>
 </html>
